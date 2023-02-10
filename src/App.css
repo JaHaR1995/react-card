@@ -1,38 +1,122 @@
-.App {
-  text-align: center;
+
+.card{
+    display: flex;
+    align-items: center;
+    box-shadow: 1px 2px 2px black;
+    height: 500px;
+    width: 450px;
+    margin: auto;
+    margin-top: 110px;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.cross{
+    height: 700px;
+    width: 550px;
+}   
+
+img{
+    width: 450px;
+    height: 300px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.name{
+    font-size: 20px;
+    margin-top: 40px;
+    padding-left: 5px;
+    font-weight: bold;
+    font-family: 'Verdana',  sans-serif;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.card-price{
+    display: flex;
+    flex-direction: column;
 }
 
-.App-link {
-  color: #61dafb;
+.btn{
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    border: 2px solid blue;  
+    opacity: 0.7;
+    margin-top: 45px;
+    color: blue;
+    font-size: 20px;
+    
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.price{
+    font-size: 20px;
+    padding-left: 5px;
+    font-weight: bold;
+    font-family: 'Verdana',  sans-serif;
+    margin-top: 40px;
+}
+
+hr{
+
+    width: 90%;
+    opacity: 1;
+}   
+
+.text{
+    font-size: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    font-family: Verdana, sans-serif;
+}
+
+.delete{  
+    width: 200px;
+    height: 20px;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 63%;
+    translate: transform(-50, -50);
+    padding: 10px 5px;
+    width: 250px;
+    background: rgb(241, 241, 241);
+    text-align: center;
+    z-index: 10;
+    box-shadow: 0 0 15px 1px ;
+    border-radius: 3px;
+}
+
+.modal_close {
+    text-align: right;
+    color: red;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.Deletebasket{
+    width: 150px;
+    background-color: red;
+    border-radius: 5px;
+    border: none;
+    margin-left: 20px;
+    color: white;
+    
+
+}
+
+.true {
+    opacity: 0.5;
 }
